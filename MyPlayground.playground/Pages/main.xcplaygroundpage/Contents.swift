@@ -14,8 +14,11 @@
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
 // write your code here
+func frozen(){
+print("Let it go!")
+}
 
-
+frozen()
 
 
 
@@ -26,20 +29,21 @@
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
 // write your code here
-
-
-
-
-
+func frozenAgain() {
+let frozen = "Let it go!"
+    print (frozen)
+}
+frozenAgain()
 
 
 /*: question3
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
 // write your code here
-
-
-
+func character(name: String) {
+    print("My favorite character is \(name).")
+}
+character("Beast")
 
 
 
@@ -48,6 +52,8 @@
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
 // write your code here
+let notFave = "Gaston"
+character(notFave)
 
 
 
@@ -62,7 +68,11 @@
 
 
 
+func tayTay(number: Int) {
+    print ("I got \(number) problems but Swift ain't one")
+}
 
+tayTay(99)
 
 
 
@@ -76,15 +86,18 @@
 
 
 
+func dos(band:String, number:Int){
+    print ("My \(number) favorite band is \(band).")
+}
 
+dos("Wilco", number:2)
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+   print("My #\(position) favorite band is \(bandName).")
+}
+badFavoriteBand("The Beatles", position:2)
 
 
 
